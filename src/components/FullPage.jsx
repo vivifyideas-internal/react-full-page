@@ -202,7 +202,7 @@ export default class FullPage extends React.Component {
 
   render() {
     return (
-      <div style={{ height: this.state.height }}>
+      <div>
         {this.renderControls()}
         {this.props.children}
       </div>
