@@ -4,6 +4,7 @@ import React from 'react';
 const Slide = props => (
   <div {...props} style={{ ...props.style }}>
     {props.children}
+    <p>Slaajd</p>
   </div>
 );
 
