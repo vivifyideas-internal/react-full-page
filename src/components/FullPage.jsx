@@ -118,10 +118,13 @@ export default class FullPage extends React.Component {
   }
 
   onScroll = (evt) => {
+    console.log("Scrolling");
     if (this.props.scrollMode !== scrollMode.FULL_PAGE) {
       return;
     }
-
+    if (this.getSlidesCount() -1 === this.getCurrentSlideIndex()) {
+      return;
+    }
     evt.preventDefault();
     if (this._isScrollPending) {
       return;
